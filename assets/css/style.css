@@ -1,0 +1,204 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+@font-face {
+	font-family: 'CustomFont';
+	src: url('./Poppins-Regular.woff2') format('woff2'),
+		 url('./Poppins-Regular.woff') format('woff'),
+		 url('./Poppins-Regular.ttf') format('truetype');
+	font-weight: 500;
+	font-style: normal;
+  }
+  
+  body {
+	height: 100vh;
+	font-family: 'CustomFont', sans-serif;
+  }
+h1 {
+	font-size: 45px;
+  }
+  h2 {
+	font-size: 38px;
+  }
+  h3 {
+	font-size: 32px;
+  }
+  h4 {
+	font-size: 28px;
+  }
+  h5 {
+	font-size: 24px;
+  }
+  h6 {
+	font-size: 20px;
+	
+  }
+
+.header {
+    text-align: center;
+	/* font-weight: bold; */
+	font-size: 2em;
+	
+}
+footer {
+	background-color: #f3f3f3;
+}
+.row {
+	--bs-gutter-x: 0rem;
+	background-color: #f3f3f3;
+	padding: 22px;
+}
+.row a  {
+	margin: auto;
+	height: auto;
+	width: 200px;
+	
+}
+.form-group {
+	padding-bottom: 25px;
+}
+.form-group p {
+	margin-bottom: 10px;
+}
+.sponsor-form {
+    display: flex;
+    flex-direction: column;
+    max-width: 600px;
+    margin: auto;
+	line-height: 30px;
+}
+.container {
+	width: 100%;
+	margin-top: 45px;
+	/* visibility: hidden; */
+}
+.container .text-center {
+	margin-bottom: 30px;
+}
+.description {
+	text-align: center;
+	font-size: 20px;
+	margin-bottom: 25px;
+}
+.form-check {
+	padding: 5px;
+	padding-left: 1.5em;
+}
+.qr-return  {
+	margin: auto;
+	margin-top: 25px;
+    text-align: center;
+    max-width: 850px;
+	/* border: solid 5px black; */
+	background-color: black;
+	box-shadow: 0px 0px 14px 7px black;
+}
+.qr-return img {
+	/* max-width: 800px; */
+	width: -webkit-fill-available;
+	vertical-align: middle;
+	width: -moz-available;
+	background-color: black;
+}
+.sponsor-example {
+	margin: auto;
+	margin-top: 25px;
+    text-align: center;
+    /* padding: 35px; */
+    border: solid 5px black;
+    max-width: 500px;
+	/* box-shadow: 0px 1px 8px 4px black;; */
+}
+.sponsor-example img{
+	width: -webkit-fill-available;
+	vertical-align: middle;
+	width: -moz-available;
+}
+.btns {
+	margin: auto;
+	max-width: 700px;
+	display: flex;
+	justify-content: space-between;
+}
+.loading {
+	text-align: center;
+}
+.loading img {
+	margin: auto;
+	text-align: center;
+	display: none;
+	background-color: white;
+	width: 100px;
+}
+.content {
+	padding: 25px;
+	margin-top: 25px;
+	border: 1px solid black;
+}
+.content p {
+	margin: auto;
+	font-size: larger;
+	text-align: center;
+	max-width: 500px;
+}
+#download {
+	margin-top: 25px;
+	margin-right: 10px;
+	width: -webkit-fill-available;
+	max-width: 700PX;
+	width: -moz-available;
+}
+#lnk-back {
+	margin-top: 25px;
+	margin-left: 10px;
+	width: -webkit-fill-available;
+	max-width: 700PX;
+	width: -moz-available;
+}
+#qr-cnt {
+	text-align: center;
+}
+#info-box{
+	/* border: 1px solid black; */
+	display: grid;
+	grid-template-columns: 50% 50%;
+	margin: 0 auto;
+}
+input[name='honeypot'] {
+	display: none;
+}
+
+/* MEDIA QUEERIES */
+@media only screen and (max-width: 992px) {
+	.sponsor-example {
+		max-width: 330px;
+	}
+}
+@media only screen and (max-width: 767px) {
+	#info-box {
+		display: inherit;
+	}
+	.sponsor-example {
+		max-width: 465px;
+	}
+	.content {
+		margin: auto;
+	}
+}
